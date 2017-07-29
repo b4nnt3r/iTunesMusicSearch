@@ -4,6 +4,7 @@ let input = document.querySelector(".search_song");
 let searchResults = document.querySelector(".results");
 let player = document.querySelector(".music_player")
 let audioSource = document.querySelector(".audioSource");
+let albumBtn = document.querySelectorAll(".albumBtn")
 
 container.addEventListener("click", function(e) {
   let inputValue = input.value;
@@ -35,10 +36,12 @@ container.addEventListener("click", function(e) {
 
 
               let tracks = `<div class="wrapper">
-                              <div class="sampleSrc" src="${sample}"></div>
-                                <a href="#" src="${sample}"><button class="albumBtn" name="button" >
-                                <img class="image" value="${sample}" src="${albumCover}" alt="album_cover"></button></a>
-                                <div id="title"><a href="#" src="${sample}">${songTitle}</a>
+                              <div class="sampleSrc" src="${sample}"> </div>
+                              <a href="#" src="${sample}"><button class="albumBtn" name="button" >
+                              <img class="image" value="${sample}" src="${albumCover}" alt="album_cover"></button></a>
+                              <div id="title">
+                                <p><a href="#" src="${sample}">${artist}</a></p>
+                                <p><a href="#" src="${sample}">${songTitle}</a></p>
                               </div>
                             </div>`
 

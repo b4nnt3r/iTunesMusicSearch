@@ -1,6 +1,8 @@
 body {
   background: black;
   color: white;
+  font-family: 'PT Sans', sans-serif;
+
 }
 
 h1 {
@@ -31,6 +33,7 @@ h3 {}
 .search input:focus {
   outline: 0;
   background: transparent;
+  font-size: 1em;
 }
 
 .search button {
@@ -60,6 +63,7 @@ h3 {}
 .player {
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .wrapper {
