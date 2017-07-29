@@ -11,7 +11,7 @@ container.addEventListener("click", function(e) {
   console.log("e is: ", e)
 
   if (e.target === button) {
-
+    searchResults.innerHTML = "";
     fetch(`https://itunes.apple.com/search?term=${inputValue}`).then(
 
         function(response) {
